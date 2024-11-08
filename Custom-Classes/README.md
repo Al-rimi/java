@@ -4,7 +4,7 @@ This repository contains a collection of Java programs designed to demonstrate O
 
 ## Contents
 
-1. [Rectangle Class](./src/sectangle/README.md) - Defines a `Rectangle` class and demonstrates calculating area and perimeter.
+1. [Rectangle Class](./src/customclasses/sectangle/README.md) - Defines a `Rectangle` class and demonstrates calculating area and perimeter.
 2. [StopWatch Class](./stopWatch/README.md) - Implements a `StopWatch` class to measure elapsed time for a sorting task.
 3. [Fan Class](./san/README.md) - Models a `Fan` with adjustable speed, color, and operational state.
 4. [PC System Simulation](./system/README.md) - Simulates a PC system with a `CPU` and `HardDisk` by using composition.
