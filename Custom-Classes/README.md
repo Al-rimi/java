@@ -1,4 +1,4 @@
-# Custom Classes - Object-Oriented Programming in Java
+# Custom Classes - Object-Oriented Programming
 
 This repository contains a collection of Java programs designed to demonstrate Object-Oriented Programming (OOP) concepts. Each exercise focuses on creating and testing custom classes to represent real-world objects. The exercises cover basic principles of OOP, including encapsulation, constructors, methods, and object interaction.
 
