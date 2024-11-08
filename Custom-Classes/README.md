@@ -1,18 +1,33 @@
+# Custom Classes - Object-Oriented Programming in Java
+
+This repository contains a collection of Java programs designed to demonstrate Object-Oriented Programming (OOP) concepts. Each exercise focuses on creating and testing custom classes to represent real-world objects. The exercises cover basic principles of OOP, including encapsulation, constructors, methods, and object interaction.
+
+## Contents
+
+1. [Rectangle Class](./src/sectangle/README.md) - Defines a `Rectangle` class and demonstrates calculating area and perimeter.
+2. [StopWatch Class](./stopWatch/README.md) - Implements a `StopWatch` class to measure elapsed time for a sorting task.
+3. [Fan Class](./san/README.md) - Models a `Fan` with adjustable speed, color, and operational state.
+4. [PC System Simulation](./system/README.md) - Simulates a PC system with a `CPU` and `HardDisk` by using composition.
+
+---
+
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+To explore each example, navigate to its folder and review the README for implementation details, code snippets, and sample outputs.
 
-## Folder Structure
+## Conclusion
 
-The workspace contains two folders by default, where:
+Through these exercises, I have gained hands-on experience with OOP principles in Java, improving my understanding of encapsulation, data fields, constructors, and methods. Combining classes also highlighted the power of composition, allowing the creation of complex objects from simpler ones.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+For additional resources, check out [Intro to Object-Oriented Programming - Crash Course by freeCodeCamp](https://youtu.be/SiBw7os-_zI?si=KxifstUYdf2hsB3V), which is a great resource for beginners.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+The code is available in each respective directory. Feel free to explore and experiment!
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+---
 
-## Dependency Management
+## Author
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+**AL RAIMI ABDULLAH**  
+
+---
+
