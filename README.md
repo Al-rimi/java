@@ -8,14 +8,25 @@ This repository is open-source under the [MIT License](LICENSE), allowing free u
 
 ## Table of Contents
 
-1. [Elementary Program](#elementary-program)
-2. [Array and Method](#array-and-method)
-3. [Mid Exam](#mid-exam)
-4. [Calendar App](#calendar-app)
-5. [Common Utility Classes](#common-utility-classes)
-6. [Custom Classes](#custom-classes)
+- **[Elementary Program](./Elementary-Program)**  
+  Basic Java programs covering loops, conditions, and algorithms.
 
----
+- **[Array and Method](./Array-and-Method)**  
+  Projects on array manipulations, sorting, and recursion.
+
+- **[Mid Exam](./Mid-Exam)**  
+  Algorithmic problems, including matrix operations and prime number checks.
+
+- **[Calendar App](./Calendar-App)**  
+  A calendar application for scheduling and event management.
+
+- **[Common Utility Classes](./Common-Utility-Classes)**  
+  Reusable utilities for date handling, validation, and file operations.
+
+- **[Custom Classes](./Custom-Classes)**  
+  Custom Java classes demonstrating OOP principles like encapsulation and polymorphism.
+
+--- 
 
 ## Cloning the Repository
 
@@ -32,56 +43,6 @@ To get started, clone this repository to your local machine:
    ```
 
 You’re all set to explore the projects locally!
-
----
-
-## Project Summaries
-
-### 1. [Elementary Program](./Elementary-Program)
-
-Introductory programs focusing on basic Java concepts, including loops, conditions, and core algorithms. Ideal for beginners starting with Java fundamentals.
-
-**Code Link**: [Elementary Program](./Elementary-Program)
-
----
-
-### 2. [Array and Method](./Array-and-Method)
-
-Explores Java arrays and methods, covering array manipulations, sorting algorithms, and recursion basics to build efficient and reusable code structures.
-
-**Code Link**: [Array and Method](./Array-and-Method)
-
----
-
-### 3. [Mid Exam](./Mid-Exam)
-
-Midterm projects showcasing solutions to algorithmic problems like matrix operations, palindrome checks, and prime number identification, demonstrating problem-solving skills.
-
-**Code Link**: [Mid Exam](./Mid-Exam)
-
----
-
-### 4. [Calendar App](./Calendar-App)
-
-A basic calendar application allowing users to view dates, add events, and manage schedules. Developed with object-oriented principles for effective data management.
-
-**Code Link**: [Calendar App](./Calendar-App)
-
----
-
-### 5. [Common Utility Classes](./Common-Utility-Classes)
-
-Reusable utility classes for common tasks, including date handling, input validation, and file operations, useful for various Java projects.
-
-**Code Link**: [Common Utility Classes](./Common-Utility-Classes)
-
----
-
-### 6. [Custom Classes](./Custom-Classes)
-
-Examples of creating custom classes in Java, with a focus on encapsulation, inheritance, and polymorphism, forming the backbone of object-oriented programming.
-
-**Code Link**: [Custom Classes](./Custom-Classes)
 
 ---
 
