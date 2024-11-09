@@ -9,8 +9,6 @@ This repository contains a collection of Java programs designed to demonstrate O
 3. [Fan Class](./src/customclasses/fan) - Models a `Fan` with adjustable speed, color, and operational state.
 4. [PC System Simulation](./src/customclasses/system) - Simulates a PC system with a `CPU` and `HardDisk` by using composition.
 
----
-
 ## Getting Started
 
 To explore each example, navigate to its folder and review the README for implementation details, code snippets, and sample outputs.

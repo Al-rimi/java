@@ -4,7 +4,7 @@ This repository contains solutions to various programming exercises, including p
 
 ## Test 1: Pattern Printer
 
-This program prints a pattern of numbers in a pyramid-like structure. The user inputs the number of rows, and the program generates the pattern.
+Write a program that prompts the user to enter the number of rows, and print the following output.
 
 **Example Input:**
 ```
@@ -55,13 +55,12 @@ public class PatternPrinter {
     }
 }
 ```
-- [View](src/midexam/PatternPrinter.java)
+- [Full code](src/midexam/PatternPrinter.java)
 
----
 
 ## Test 2: Twin Primes Finder
 
-This program finds twin primes less than 1,000. Twin primes are pairs of primes that differ by 2.
+Twin primes are a pair of prime numbers that differ by 2. for example, 3 and 5 are twin primes, 5 and 7 are twin primes, and 11 and 13 are twin primes. Write a program to find all twin primes less than 1,000. Display the output as follows:
 
 **Example Output:**
 ```
@@ -94,14 +93,14 @@ public class TwinPrimesFinder {
         return true;
     }
 }
-```
-- [View](src/midexam/TwinPrimesFinder.java)
 
----
+```
+- [Full code](src/midexam/TwinPrimesFinder.java)
+
 
 ## Test 3: Array Comparison
 
-This program checks if two arrays are strictly identical. The method `equals` compares the arrays element by element.
+The arrays list1 and list2 are strictly identical if their corresponding elements are equal. Write a method that returns true if list1 and list2 are strictly identical, using the following header: `public static boolean equals(int []list1, int []list2)`.
 
 **Example Input:**
 ```
@@ -116,41 +115,25 @@ arr1 and arr2 are not equals.
 
 **Answer:**
 ```java
-public class ArrayComparator {
-    public static void main(String[] args) {
-        int []arr1 = {1, 2, 3, 5};
-        int []arr2 = {1, 2, 3, 4};
+public static boolean equals(int []list1, int []list2){
 
-        if(equals(arr1, arr2)){
-            System.out.println("arr1 and arr2 are equals.");
-        }else{
-            System.out.println("arr1 and arr2 are not equals.");
-        }
-
+    if (list1 == null && list2 == null) return true;
+    if (list1 == null || list2 == null) return false;
+    if (list1.length != list2.length) return false;
+    
+    for (int i = 0; i < list1.length; i++) {
+        if (list1[i] != list2[i]) return false;
     }
 
-    public static boolean equals(int []list1, int []list2){
-
-        if (list1 == null && list2 == null) return true;
-        if (list1 == null || list2 == null) return false;
-        if (list1.length != list2.length) return false;
-        
-        for (int i = 0; i < list1.length; i++) {
-            if (list1[i] != list2[i]) return false;
-        }
-
-        return true;
-
-    }
+    return true;
 }
 ```
-- [View](src/midexam/ArrayComparator.java)
+- [Full code](src/midexam/ArrayComparator.java)
 
----
 
 ## Test 4: Matrix Column Sum
 
-This program calculates the sum of elements in a specified column of a matrix.
+Write a method that returns the sum of all elements in a specified column in a matrixusing the following header: `public static double sumColumn(double[][] matrix, int columnIndex)`
 
 **Example Input:**
 ```
@@ -168,35 +151,24 @@ Column Index: 0
 
 **Answer:**
 ```java
-public class MatrixColumnSum { //4
-    public static void main(String[] args) {
+public static double sumColumn(double [][]matrix, int columnIndex){
 
-        double [][]m = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-        
-        System.out.println(sumColum(m, 0));
+    if (matrix == null) return 0.0;
+    double sum = 0.0;
+
+    for (int i = 0; i < matrix.length; i++) {
+        sum += matrix[i][columnIndex];
     }
 
-    public static double sumColum(double [][]matrix, int columnIndex){
-
-        if (matrix == null) return 0.0;
-        double sum = 0.0;
-
-        for (int i = 0; i < matrix.length; i++) {
-            sum += matrix[i][columnIndex];
-        }
-
-        return sum;
-
-    }
+    return sum;
 }
 ```
-- [View](src/midexam/MatrixColumnSum.java)
+- [Full code](src/midexam/MatrixColumnSum.java)
 
----
 
 ## Test 5: Palindrome Checker
 
-This program checks if a given number is a palindrome.
+A number is a palindrome if it reads the same forward and backward. For example, `1`, `121` and `123321` are all palindrome Write a program that checks whether a number is a palindrome.
 
 **Example Input:**
 ```
@@ -248,13 +220,12 @@ public class PalindromeChecker {
     }
 }
 ```
-- [View](src/midexam/PalindromeChecker.java)
+- [Full code](src/midexam/PalindromeChecker.java)
 
----
 
 ## Test 6: Unique Equation Solver
 
-This program finds all solutions to the equation where different letters represent different digits, ensuring no repeated digits.
+In the following equation, different letters represent different numbers (0, 1, 2,.., 9), and the same letter represents the same number, Please write a program to find and show alsolutions.
 
 **Example Output:**
 ```
@@ -317,7 +288,7 @@ public class UniqueEquationSolver { // 6
     }
 }
 ```
-- [View](src/midexam/UniqueEquationSolver.java)
+- [Full code](src/midexam/UniqueEquationSolver.java)
 
 ---
 

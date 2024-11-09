@@ -32,10 +32,13 @@ To get started, clone this repository to your local machine:
 
 1. Ensure [Git](https://git-scm.com/) is installed.
 2. Open a terminal and use:
+
    ```bash
    git clone https://github.com/Al-rimi/java.git
    ```
+
 3. Navigate to the project folder:
+
    ```bash
    cd java
    ```
