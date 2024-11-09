@@ -4,7 +4,6 @@ Welcome to my repository of Java projects developed during the Object-Oriented J
 
 This repository is open-source under the [MIT License](LICENSE), allowing free use and modification. Enjoy exploring!
 
----
 
 ## Table of Contents
 
@@ -26,7 +25,6 @@ This repository is open-source under the [MIT License](LICENSE), allowing free u
 - **[Custom Classes](./Custom-Classes)**  
   Custom Java classes demonstrating OOP principles like encapsulation and polymorphism.
 
---- 
 
 ## Cloning the Repository
 
@@ -44,7 +42,6 @@ To get started, clone this repository to your local machine:
 
 You’re all set to explore the projects locally!
 
----
 
 ## License
 
