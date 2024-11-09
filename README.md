@@ -1,4 +1,4 @@
-# Java Class Projects at ZJNU
+# Java Class ZJNU
 
 Welcome to the repository containing the projects from my Object-Oriented Java class at Zhejiang Normal University (ZJNU). This collection includes a variety of Java programs that demonstrate fundamental and advanced concepts in object-oriented programming (OOP). The projects were developed as part of the coursework for the university's Java class. While the ideas and inspirations are drawn from the course, all the code within this repository is my own.
 
@@ -6,12 +6,12 @@ Feel free to explore, use, or modify the code, as this repository is completely 
 
 ## Table of Contents
 
-- 1. [Elementary Program](#elementary-program)
-- 2. [Array and Method](#array-and-method)
-- 3. [Mid Exam](#mid-exam)
-- 4. [Calendar App](#calendar-app)
-- 5. [Common Utility Classes](#common-utility-classes)
-- 6. [Custom Classes](#custom-classes)
+1. [Elementary Program](#elementary-program)
+2. [Array and Method](#array-and-method)
+3. [Mid Exam](#mid-exam)
+4. [Calendar App](#calendar-app)
+5. [Common Utility Classes](#common-utility-classes)
+6. [Custom Classes](#custom-classes)
 
 
 ## How to Clone the Repository
@@ -73,7 +73,7 @@ This folder includes a set of common utility classes like date utilities, input 
 
 ---
 
-### [Custom-Classes](./Custom-Classes)
+### [Custom Classes](./Custom-Classes)
 
 This project demonstrates how to create and use custom classes in Java to solve various problems. It includes examples of encapsulation, inheritance, and polymorphism.
 
