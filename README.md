@@ -1,8 +1,10 @@
-# Java Class ZJNU
+# ZJNU Object-Oriented Java Class
 
-Welcome to the repository containing the projects from my Object-Oriented Java class at Zhejiang Normal University (ZJNU). This collection includes a variety of Java programs that demonstrate fundamental and advanced concepts in object-oriented programming (OOP). The projects were developed as part of the coursework for the university's Java class. While the ideas and inspirations are drawn from the course, all the code within this repository is my own.
+Welcome to my repository of Java projects developed during the Object-Oriented Java course at Zhejiang Normal University (ZJNU). This collection demonstrates key concepts in object-oriented programming, including encapsulation, inheritance, and more advanced topics like utility classes and custom applications. Each project was created as part of the course curriculum; while ideas are inspired by the course, the code is fully authored by me.
 
-Feel free to explore, use, or modify the code, as this repository is completely open source under the [MIT License](LICENSE).
+This repository is open-source under the [MIT License](LICENSE), allowing free use and modification. Enjoy exploring!
+
+---
 
 ## Table of Contents
 
@@ -13,69 +15,71 @@ Feel free to explore, use, or modify the code, as this repository is completely 
 5. [Common Utility Classes](#common-utility-classes)
 6. [Custom Classes](#custom-classes)
 
+---
 
-## How to Clone the Repository
+## Cloning the Repository
 
-To clone this repository to your local machine, follow these steps:
+To get started, clone this repository to your local machine:
 
-1. Ensure you have [Git](https://git-scm.com/) installed on your machine.
-2. Open a terminal (or Git Bash on Windows).
-3. Use the following command:
+1. Ensure [Git](https://git-scm.com/) is installed.
+2. Open a terminal and use:
    ```bash
    git clone https://github.com/Al-rimi/java.git
    ```
-4. After cloning, navigate to the folder where the repository is located:
+3. Navigate to the project folder:
    ```bash
    cd java
    ```
 
-You can now explore and run the projects locally!
-
-## Overview
-
-### [Elementary Program](./Elementary-Program)
-
-A collection of elementary Java programs aimed at beginners. These programs focus on core concepts such as loops, conditions, and basic algorithms.
-
-**Code Link**: [Elementary-Program](./Elementary-Program)
+You’re all set to explore the projects locally!
 
 ---
 
-### [Array and Method](./Array-and-Method)
+## Project Summaries
 
-This project covers the use of arrays and methods in Java, focusing on array manipulation, sorting algorithms, and recursive methods.
+### 1. [Elementary Program](./Elementary-Program)
 
-**Code Link**: [Array-and-Method](./Array-and-Method)
+Introductory programs focusing on basic Java concepts, including loops, conditions, and core algorithms. Ideal for beginners starting with Java fundamentals.
 
----
-
-### [Mid Exam](./Mid-Exam)
-
-A set of Java programs created for a mid-term exam. The tasks include solving algorithmic problems such as matrix operations, palindrome checking, and prime number finding.
-
-**Code Link**: [Mid-Exam](./Mid-Exam)
+**Code Link**: [Elementary Program](./Elementary-Program)
 
 ---
 
-### [Calendar App](./Calendar-App)
+### 2. [Array and Method](./Array-and-Method)
 
-This project contains a calendar application that allows users to view dates, add events, and manage schedules. It leverages object-oriented design principles to manage calendar data efficiently.
+Explores Java arrays and methods, covering array manipulations, sorting algorithms, and recursion basics to build efficient and reusable code structures.
 
-**Code Link**: [Calendar-App](java/Calendar-App)
+**Code Link**: [Array and Method](./Array-and-Method)
 
 ---
 
-### [Common Utility Classes](,/Common-Utility-Classes)
+### 3. [Mid Exam](./Mid-Exam)
 
-This folder includes a set of common utility classes like date utilities, input validation, and file operations that can be reused across different Java programs.
+Midterm projects showcasing solutions to algorithmic problems like matrix operations, palindrome checks, and prime number identification, demonstrating problem-solving skills.
+
+**Code Link**: [Mid Exam](./Mid-Exam)
+
+---
+
+### 4. [Calendar App](./Calendar-App)
+
+A basic calendar application allowing users to view dates, add events, and manage schedules. Developed with object-oriented principles for effective data management.
+
+**Code Link**: [Calendar App](./Calendar-App)
+
+---
+
+### 5. [Common Utility Classes](./Common-Utility-Classes)
+
+Reusable utility classes for common tasks, including date handling, input validation, and file operations, useful for various Java projects.
 
 **Code Link**: [Common Utility Classes](./Common-Utility-Classes)
 
 ---
 
-### [Custom Classes](./Custom-Classes)
+### 6. [Custom Classes](./Custom-Classes)
 
-This project demonstrates how to create and use custom classes in Java to solve various problems. It includes examples of encapsulation, inheritance, and polymorphism.
+Examples of creating custom classes in Java, with a focus on encapsulation, inheritance, and polymorphism, forming the backbone of object-oriented programming.
 
 **Code Link**: [Custom Classes](./Custom-Classes)
 
@@ -83,9 +87,7 @@ This project demonstrates how to create and use custom classes in Java to solve 
 
 ## License
 
-This repository is open-source under the **MIT License**. You are free to use, modify, and distribute the code. However, please note that the ideas behind these programs are inspired by the curriculum at ZJNU, and while the code is my own, it was developed as part of the coursework.
-
-For more details, refer to the [LICENSE](LICENSE) file.
+This repository is licensed under the **MIT License**. The code is entirely my own, created with inspiration from the ZJNU course but independently written. See the full license details in the [LICENSE](LICENSE) file.
 
 ---
 
