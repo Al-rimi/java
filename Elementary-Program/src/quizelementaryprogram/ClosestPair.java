@@ -1,7 +1,7 @@
-package elementaryprogram;
+package quizelementaryprogram;
 import java.util.Scanner;
 
-public class ClosestPair { // Test 2: find the two points that are nearest to each other. 
+public class ClosestPair {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
