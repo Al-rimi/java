@@ -1,4 +1,4 @@
-# Made-Exam
+# Midterm Exam: Elementary Programming
 
 This repository contains solutions to various programming exercises, including patterns, prime numbers, array comparison, matrix operations, palindromes, and more. Below are the explanations for each test, including example inputs and outputs.
 
@@ -318,23 +318,6 @@ public class UniqueEquationSolver { // 6
 }
 ```
 - [View](src/midexam/UniqueEquationSolver.java)
-
----
-
-## Project Structure
-
-```
-Mid-Exam/
-├── src/
-│   └── midexam/
-│       ├── PatternPrinter.java
-│       ├── TwinPrimesFinder.java
-│       ├── ArrayComparator.java
-│       ├── MatrixColumnSum.java
-│       ├── PalindromeChecker.java
-│       └── UniqueEquationSolver.java
-└── README.md
-```
 
 ---
 

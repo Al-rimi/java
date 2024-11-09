@@ -6,12 +6,13 @@ Feel free to explore, use, or modify the code, as this repository is completely 
 
 ## Table of Contents
 
-- [Calendar-App](#calendar-app)
-- [Common-Utility-Classes](#common-utility-classes)
-- [Custom-Classes](#custom-classes)
-- [Elementary-Program](#elementary-program)
-- [Mid-Exam](#mid-exam)
-- [Array-and-Method](#array-and-method)
+- 1. [Elementary Program](#elementary-program)
+- 2. [Array and Method](#array-and-method)
+- 3. [Mid Exam](#mid-exam)
+- 4. [Calendar App](#calendar-app)
+- 5. [Common Utility Classes](#common-utility-classes)
+- 6. [Custom Classes](#custom-classes)
+
 
 ## How to Clone the Repository
 
@@ -30,9 +31,33 @@ To clone this repository to your local machine, follow these steps:
 
 You can now explore and run the projects locally!
 
-## Projects Overview
+## Overview
 
-### [Calendar-App](java/Calendar-App)
+### [Elementary Program](./Elementary-Program)
+
+A collection of elementary Java programs aimed at beginners. These programs focus on core concepts such as loops, conditions, and basic algorithms.
+
+**Code Link**: [Elementary-Program](./Elementary-Program)
+
+---
+
+### [Array and Method](./Array-and-Method)
+
+This project covers the use of arrays and methods in Java, focusing on array manipulation, sorting algorithms, and recursive methods.
+
+**Code Link**: [Array-and-Method](./Array-and-Method)
+
+---
+
+### [Mid Exam](./Mid-Exam)
+
+A set of Java programs created for a mid-term exam. The tasks include solving algorithmic problems such as matrix operations, palindrome checking, and prime number finding.
+
+**Code Link**: [Mid-Exam](./Mid-Exam)
+
+---
+
+### [Calendar App](./Calendar-App)
 
 This project contains a calendar application that allows users to view dates, add events, and manage schedules. It leverages object-oriented design principles to manage calendar data efficiently.
 
@@ -40,43 +65,19 @@ This project contains a calendar application that allows users to view dates, ad
 
 ---
 
-### [Common-Utility-Classes](java/Common-Utility-Classes)
+### [Common Utility Classes](,/Common-Utility-Classes)
 
 This folder includes a set of common utility classes like date utilities, input validation, and file operations that can be reused across different Java programs.
 
-**Code Link**: [Common-Utility-Classes](java/Common-Utility-Classes)
+**Code Link**: [Common Utility Classes](./Common-Utility-Classes)
 
 ---
 
-### [Custom-Classes](java/Custom-Classes)
+### [Custom-Classes](./Custom-Classes)
 
 This project demonstrates how to create and use custom classes in Java to solve various problems. It includes examples of encapsulation, inheritance, and polymorphism.
 
-**Code Link**: [Custom-Classes](java/Custom-Classes)
-
----
-
-### [Elementary-Program](java/Elementary-Program)
-
-A collection of elementary Java programs aimed at beginners. These programs focus on core concepts such as loops, conditions, and basic algorithms.
-
-**Code Link**: [Elementary-Program](java/Elementary-Program)
-
----
-
-### [Mid-Exam](java/Mid-Exam)
-
-A set of Java programs created for a mid-term exam. The tasks include solving algorithmic problems such as matrix operations, palindrome checking, and prime number finding.
-
-**Code Link**: [Mid-Exam](java/Mid-Exam)
-
----
-
-### [Array-and-Method](java/Array-and-Method)
-
-This project covers the use of arrays and methods in Java, focusing on array manipulation, sorting algorithms, and recursive methods.
-
-**Code Link**: [Array-and-Method](java/Array-and-Method)
+**Code Link**: [Custom Classes](./Custom-Classes)
 
 ---
 
