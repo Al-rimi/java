@@ -1,4 +1,4 @@
-# ZJNU Object-Oriented Java Class
+# ZJNU OOP Java
 
 Welcome to my repository of Java projects developed during the Object-Oriented Java course at Zhejiang Normal University (ZJNU). This collection demonstrates key concepts in object-oriented programming, including encapsulation, inheritance, and more advanced topics like utility classes and custom applications. Each project was created as part of the course curriculum; while ideas are inspired by the course, the code is fully authored by me.
 
