@@ -25,3 +25,5 @@ To run any of these programs, follow these steps:
 Each program will prompt you for inputs (as necessary) and display the corresponding outputs on the console.
 
 ---
+
+**Check the full repository here**: [Java Projects Repository](https://github.com/Al-rimi/java)
