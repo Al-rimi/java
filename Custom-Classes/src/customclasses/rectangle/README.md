@@ -29,3 +29,5 @@ Rectangle 2 - Width: 4.50, Height: 3.71, Area: 16.70, Perimeter: 16.42
 ```
 
 ---
+
+For any questions or issues, refer to the main repository: [Java Projects Repository](https://github.com/Al-rimi/java).

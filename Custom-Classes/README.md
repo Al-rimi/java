@@ -25,8 +25,4 @@ The code is available in each respective directory. Feel free to explore and exp
 
 ---
 
-## Author
-
-**AL RAIMI ABDULLAH**  
-
-
+**Check the full repository here**: [Java Projects Repository](https://github.com/Al-rimi/java)
