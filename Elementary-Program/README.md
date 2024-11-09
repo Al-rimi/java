@@ -1,18 +1,27 @@
-## Getting Started
+# Elementary Programming
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This repository contains a collection of Java programs that demonstrate core concepts in elementary programming. The programs range from basic operations such as leap year checks to more algorithmic exercises like generating patterns. These programs are ideal for beginner programmers looking to practice fundamental Java programming skills, including loops, conditionals, arrays, and string manipulations.
 
-## Folder Structure
+## Program List
 
-The workspace contains two folders by default, where:
+1. **Leap Year Check**: Determines if a given year is a leap year or not.
+2. **Future Day of the Week**: Calculates the day of the week for any given future date.
+3. **Point Inside Circle**: Checks if a point lies inside a circle.
+4. **Palindrome Check**: Reverses a string and checks if it’s the same as the original string.
+5. **Hexadecimal to Decimal**: Converts hexadecimal values to their decimal equivalents.
+6. **Pyramid Display**: Prints a pyramid of numbers.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Usage
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+To run any of these programs, follow these steps:
+1. Clone or download this repository.
+2. Navigate to the `Elementary-Program` folder.
+3. Compile and run each Java file using a Java IDE or from the command line with:
+   ```
+   javac <ProgramName>.java
+   java <ProgramName>
+   ```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Each program will prompt you for inputs (as necessary) and display the corresponding outputs on the console.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
