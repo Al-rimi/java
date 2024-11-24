@@ -1,4 +1,4 @@
-# Midterm Exam: Elementary Programming
+# First Quiz: Elementary Programming
 
 This repository contains solutions to various programming exercises, including patterns, prime numbers, array comparison, matrix operations, palindromes, and more. Below are the explanations for each test, including example inputs and outputs.
 

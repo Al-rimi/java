@@ -10,7 +10,7 @@ Welcome to my repository of Java projects developed during the **Object-Oriented
 |:---------------------------------------------------|:--------------------------------------------------------------------------------------|
 | [Elementary Program](./Elementary-Program)         | Basic Java programs covering loops, conditions, and algorithms.                       |
 | [Array and Method](./Array-and-Method)             | Projects on array manipulations, sorting techniques, and recursion.                   |
-| [Mid Exam](./Mid-Exam)                             | Algorithmic problems like matrix operations and prime number checks.                  |
+| [First Quiz](./First-Quiz)                         | Algorithmic problems like matrix operations and prime number checks.                  |
 | [Calendar App](./Calendar-App)                     | A calendar application for scheduling and event management.                           |
 | [Common Utility Classes](./Common-Utility-Classes) | Reusable utilities for date handling, validation, and file operations.                |
 | [Custom Classes](./Custom-Classes)                 | Custom Java classes demonstrating OOP principles like encapsulation and polymorphism. |
