@@ -10,8 +10,8 @@ In positive common fractions, the numerator and denominator are natural numbers.
 <br>
 
 The picture below illustrates 3/4 of a cake:
-<div style="text-align: center;">
-  <img src="./resources/cake_fraction.png" alt="Output Screenshot" style="width: 80%;">
+<div style="text-align: center; width: 100%;">
+  <img src="./resources/cake_fraction.png" alt="Output Screenshot" style="width: 100%;">
 </div>
 
 <details>
