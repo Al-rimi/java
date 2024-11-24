@@ -18,6 +18,12 @@ public class Fraction {
         simplify();
     }
 
+    @Override
+    public String toString() {
+        if (denominator == 1) return String.valueOf(numerator);
+        return numerator + "/" + denominator;
+    }
+
     public Fraction add(Fraction other) {
         int num = this.numerator * other.denominator + other.numerator * this.denominator;
         int den = this.denominator * other.denominator;
@@ -42,24 +48,23 @@ public class Fraction {
         return new Fraction(num, den);
     }
 
+    public boolean isGreaterThan(Fraction other) {
+        return this.numerator * other.denominator > other.numerator * this.denominator;
+    }
+
     private void simplify() {
         int gcd = gcd(numerator, denominator);
         numerator /= gcd;
         denominator /= gcd;
+
+        if(denominator < 0){
+            denominator *= -1;
+            numerator *= -1;
+        }
     }
 
+    // Find the greatest common divisor (GCD) using Euclidean algorithm
     private int gcd(int a, int b) {
-        if (b == 0) return a;
-        return gcd(b, a % b);
-    }
-
-    @Override
-    public String toString() {
-        if (denominator == 1) return String.valueOf(numerator);
-        return numerator + "/" + denominator;
-    }
-
-    public boolean isGreaterThan(Fraction other) {
-        return this.numerator * other.denominator > other.numerator * this.denominator;
+        return (b == 0) ? a : gcd(b, a % b);
     }
 }

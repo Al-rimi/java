@@ -1,7 +1,4 @@
 # Lab 2: Classes and Objects
-**Student ID**:  202336020211   
-**Name**:  AL RAIMI ABDULLAH   
-**Grade**:  
 
 ## Introduction
 A fraction (from Latin *fractus*, "broken") represents a part of a whole or, more generally, any number of equal parts. When spoken in everyday English, a fraction describes how many parts of a certain size there are, for example, one-half, eight-fifths, three-quarters.
@@ -14,7 +11,7 @@ In positive common fractions, the numerator and denominator are natural numbers.
 
 The picture below illustrates 3/4 of a cake:
 <div style="text-align: center;">
-  <img src="./resources/cake_fraction.png" alt="Output Screenshot">
+  <img src="./resources/cake_fraction.png" alt="Output Screenshot" style="width: 80%;">
 </div>
 
 <details>
@@ -24,12 +21,13 @@ A cake with one quarter (one fourth) removed. The remaining three fourths are sh
 
 </details>
 
+<br>
 
 A common fraction is a numeral that represents a rational number. That same number can also be represented as a decimal, a percent, or with a negative exponent. For example, 0.01, 1%, and 10⁻² are all equal to the fraction 1/100. An integer can be thought of as having an implicit denominator of one (for example, 7 equals 7/1).
 
 <br>
 
-## Arithmetic with Fractions
+### Arithmetic with Fractions
 ```
 1/2 + 1/3 = (3/2 * 3) + (2/3 * 2) = 3/6 + 2/6 = 5/6
 ```
@@ -65,7 +63,6 @@ A common fraction is a numeral that represents a rational number. That same numb
 2. **Create an application** to check if the Java class `Fraction` is functional.
 
 ### Sample Output
-The sample output format is for reference only. Feel free to change the output format as long as it is clearly understandable.
 
 #### Example 1:
 **Input**:  
@@ -105,7 +102,7 @@ The denominator cannot be zero.
 
 <br>
 
-### Code:
+## Code:
 
 #### Class `Fraction`
 
@@ -130,6 +127,12 @@ public class Fraction {
         simplify();
     }
 
+    @Override
+    public String toString() {
+        if (denominator == 1) return String.valueOf(numerator);
+        return numerator + "/" + denominator;
+    }
+
     public Fraction add(Fraction other) {
         int num = this.numerator * other.denominator + other.numerator * this.denominator;
         int den = this.denominator * other.denominator;
@@ -149,33 +152,29 @@ public class Fraction {
     }
 
     public Fraction divide(Fraction other) {
-        if (other.numerator == 0) {
-            throw new ArithmeticException("Division by zero.");
-        }
         int num = this.numerator * other.denominator;
         int den = this.denominator * other.numerator;
         return new Fraction(num, den);
+    }
+
+    public boolean isGreaterThan(Fraction other) {
+        return this.numerator * other.denominator > other.numerator * this.denominator;
     }
 
     private void simplify() {
         int gcd = gcd(numerator, denominator);
         numerator /= gcd;
         denominator /= gcd;
+
+        if(denominator < 0){
+            denominator *= -1;
+            numerator *= -1;
+        }
     }
 
+    // Find the greatest common divisor (GCD) using Euclidean algorithm
     private int gcd(int a, int b) {
-        if (b == 0) return a;
-        return gcd(b, a % b);
-    }
-
-    @Override
-    public String toString() {
-        if (denominator == 1) return String.valueOf(numerator);
-        return numerator + "/" + denominator;
-    }
-
-    public boolean isGreaterThan(Fraction other) {
-        return this.numerator * other.denominator > other.numerator * this.denominator;
+        return (b == 0) ? a : gcd(b, a % b);
     }
 }
 ```
@@ -192,13 +191,14 @@ public class Test {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter numerator and denominator for the first fraction:");
-        int num1 = scanner.nextInt();
-        int den1 = scanner.nextInt();
+        System.out.printf("Enter numerator and denominator (num1 den1 num2 den2): ");
+        String input = scanner.nextLine();
+        String[] parts = input.split(" ");
 
-        System.out.println("Enter numerator and denominator for the second fraction:");
-        int num2 = scanner.nextInt();
-        int den2 = scanner.nextInt();
+        int num1 = Integer.parseInt(parts[0]);
+        int den1 = Integer.parseInt(parts[1]);
+        int num2 = Integer.parseInt(parts[2]);
+        int den2 = Integer.parseInt(parts[3]);
 
         scanner.close();
 
@@ -212,9 +212,7 @@ public class Test {
             System.out.println(fraction1 + " ÷ " + fraction2 + " = " + fraction1.divide(fraction2));
             System.out.println(fraction1 + " > " + fraction2 + " = " + fraction1.isGreaterThan(fraction2));
         } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-        } catch (ArithmeticException e) {
-            System.out.println("Exception: " + e.getMessage());
+            System.err.println("Error: " + e.getMessage());
         }
     }
 }
@@ -222,12 +220,110 @@ public class Test {
 
 <br>
 
-### Output:
+## Output:
 
-<div style="text-align: center;">
-  <img src="./resources/Screenshot.png" alt="Screenshot" style="width: 100%; max-width: 100%;">
-</div>
+<div style="text-align: center; width: 100%;">
+    <img src="./resources\Screenshot.png" alt="Screenshot" style="width: 100%;">
+  </div>
+
+<br>
+<br>
+
+## New Concepts
+
+> ###### Error Handling with `try-catch` in Java and Greatest Common Divisor (GCD) Algorithm and explained in detail, supported by examples.
+
+
+### 1. **Error Handling with `try-catch` in Java**  
+
+In Java, the **`try-catch` block** is used to handle exceptions, ensuring the program runs smoothly even when errors occur. This was particularly useful in this lab to handle invalid fractions, such as a denominator of zero.
+
+### Syntax  
+
+```java
+try {
+    // Code that might throw an exception
+} catch (ExceptionType e) {
+    // Handle the exception
+}
+```
+
+### Code Example  
+
+```java
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter numerator and denominator (num den):");
+    int num = scanner.nextInt();
+    int den = scanner.nextInt();
+
+    Fraction fraction = new Fraction(num, den);
+    System.out.println("Fraction: " + fraction);
+```
+
+### Explanation  
+When creating a fraction with a denominator of zero, the program throws an **`IllegalArgumentException`**, which is caught in the `catch` block, preventing the program from crashing.  
+
+### Output for Invalid Input  
+
+**Input**:  
+```java
+1 0
+```
+
+**Output**:  
+```
+Error: The denominator cannot be zero.
+```
 
 <br>
 
-> Feel free to visit my Java repository [here](https://github.com/Al-rimi/java)
+### 2. **Greatest Common Divisor (GCD) Algorithm**  
+
+The **Greatest Common Divisor** is the largest integer that divides two numbers without leaving a remainder. This recursive algorithm is efficient and works recursively using the relation:  
+
+```
+GCD(a, b) = GCD(b, a % b)
+```  
+
+### Implementation Steps  
+1. If `b = 0`, the GCD is `a`.  
+2. Otherwise, recursively call the function with `b` and `a % b`.  
+
+### Code Example  
+
+```java
+private int gcd(int a, int b) {
+    if (b == 0) return a;  // Base case: when b is 0, a is the GCD
+    return gcd(b, a % b);  // Recursive step
+}
+```
+
+### How It Works  
+Let’s find the GCD of `48` and `18`:  
+
+1. \( GCD(48, 18) \)  
+   - \( 48 \mod 18 = 12 \), so call \( GCD(18, 12) \).  
+2. \( GCD(18, 12) \)  
+   - \( 18 \mod 12 = 6 \), so call \( GCD(12, 6) \).  
+3. \( GCD(12, 6) \)  
+   - \( 12 \mod 6 = 0 \), so return \( GCD = 6 \).  
+
+### Practical Usage in Fractions  
+In the lab, I used the GCD to simplify fractions. For example:  
+
+```java
+public void simplify() {
+    int gcd = gcd(numerator, denominator);
+    numerator /= gcd;
+    denominator /= gcd;
+}
+```
+
+## Summary  
+
+- **Error Handling**: The `try-catch` mechanism in Java ensures that invalid inputs (e.g., zero denominators) are handled gracefully, maintaining program stability.  
+- **GCD Algorithm**: Simplifies fractions by finding the largest divisor of the numerator and denominator. It’s efficient and recursive, ensuring fractions are always in their simplest form.
+
+<br>
+
+> Feel free to visit my Java repository [here](https://github.com/Al-rimi/java) thanks.
