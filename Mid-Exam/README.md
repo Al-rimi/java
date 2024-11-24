@@ -292,4 +292,4 @@ public class UniqueEquationSolver { // 6
 
 ---
 
-**Check the full repository here**: [Java Projects Repository](https://github.com/Al-rimi/java)
+> **Check the full repository here**: [Java Projects Repository](https://github.com/Al-rimi/java)
