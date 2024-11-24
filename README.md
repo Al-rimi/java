@@ -50,6 +50,3 @@ You’re all set to explore the projects locally!
 
 This repository is licensed under the **MIT License**. The code is entirely my own, created with inspiration from the ZJNU course but independently written. See the full license details in the [LICENSE](LICENSE) file.
 
----
-
-**Author**: AL RAIMI ABDULLAH (路飞)
