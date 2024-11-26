@@ -11,7 +11,7 @@ In positive common fractions, the numerator and denominator are natural numbers.
 
 The picture below illustrates 3/4 of a cake:
 <div style="text-align: center; width: 100%;">
-  <img src="./resources/cake_fraction.png" alt="Output Screenshot" style="width: 100%;">
+  <img src="./resources/cake_fraction.png" alt="Output Screenshot" style="width: 80%;">
 </div>
 
 <details>
@@ -236,7 +236,7 @@ public class Test {
 
 ### 1. **Error Handling with `try-catch` in Java**  
 
-In Java, the **`try-catch` block** is used to handle exceptions, ensuring the program runs smoothly even when errors occur. This was particularly useful in this lab to handle invalid fractions, such as a denominator of zero.
+The **`try-catch` block** in Java is a way to handle exceptions gracefully. It ensures your program doesn't crash when it encounters unexpected errors, such as invalid user inputs or illegal operations. In this lab, it was particularly useful for managing cases like dividing by zero when working with fractions.  
 
 ### Syntax  
 
@@ -244,36 +244,67 @@ In Java, the **`try-catch` block** is used to handle exceptions, ensuring the pr
 try {
     // Code that might throw an exception
 } catch (ExceptionType e) {
-    // Handle the exception
+    // Code to handle the exception
 }
 ```
 
-### Code Example  
+To manually trigger an exception for invalid conditions, use:  
 
 ```java
+if (condition) {
+    throw new ExceptionType("Error message");
+}
+```
+---
+
+### Code Example  
+
+#### `App` Class
+
+```java
+try {
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Enter numerator and denominator (num den):");
+    System.out.println("Enter numerator and denominator (e.g., num den):");
     int num = scanner.nextInt();
     int den = scanner.nextInt();
 
     Fraction fraction = new Fraction(num, den);
     System.out.println("Fraction: " + fraction);
+} catch (IllegalArgumentException e) {
+    System.err.println("Error: " + e.getMessage());
+}
 ```
 
-### Explanation  
-When creating a fraction with a denominator of zero, the program throws an **`IllegalArgumentException`**, which is caught in the `catch` block, preventing the program from crashing.  
+#### `Fraction` Class
 
-### Output for Invalid Input  
+```java
+if (denominator == 0) {
+    throw new IllegalArgumentException("The denominator cannot be zero.");
+}
+```
+
+---
+
+### How It Works  
+
+1. **`try` Block**: Contains the code that may throw an exception, such as creating a fraction.  
+2. **`catch` Block**: Handles the exception, preventing the program from terminating abruptly.  
+3. **Custom Exception**: When a denominator is zero, the `Fraction` class throws an **`IllegalArgumentException`**, which is caught in the `catch` block.  
+
+This approach ensures that invalid inputs are handled gracefully while displaying helpful error messages to the user.
+
+### Example Output for Invalid Input  
 
 **Input**:  
-```java
+```plaintext
 1 0
 ```
 
 **Output**:  
-```
+```plaintext
 Error: The denominator cannot be zero.
-```
+```  
+
 
 <br>
 
