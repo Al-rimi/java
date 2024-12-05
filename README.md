@@ -16,6 +16,7 @@ Welcome to my repository of Java projects developed during the **Object-Oriented
 | [Custom Classes](./Custom-Classes)                 | Custom Java classes demonstrating OOP principles like encapsulation and polymorphism. |
 | [Inheritance](./Inheritance)                       | Focused on hierarchical relationships and inheritance in Java.                        |
 | [Classes and Object](./Classes-and-Object)         | Practical examples of defining and using classes and objects in Java.                 |
+| [Interface](./Interface)                           | Demonstrates the use of interfaces to enforce method implementation in subclasses.    |
 
 
 ##### clone the repository using the command below:
